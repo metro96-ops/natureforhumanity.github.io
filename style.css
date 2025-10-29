@@ -6,4 +6,58 @@ main {max-width:800px; margin:40px auto; padding:0 16px;}
 section {margin-bottom:40px;}
 h1,h2 {color:#006400;}
 footer {text-align:center; background:#f4f4f4; padding:12px; font-size:0.9em;}
+/* === Nature Theme Enhancements === */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e8f5e9, #f0fff0);
+  color: #222;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #a5d6a7, #81c784);
+  color: #003300;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* Floating leaf animation */
+@keyframes floatLeaf {
+  0% {transform: translateY(0) rotate(0deg);}
+  100% {transform: translateY(-100vh) rotate(360deg);}
+}
+.leaf {
+  position: fixed;
+  bottom: -20px;
+  animation: floatLeaf 10s linear infinite;
+  opacity: 0.3;
+  z-index: 0;
+}
+
 
