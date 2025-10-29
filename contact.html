@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Nature for Humanity Initiative Ltd.</title>
+
+  <!-- SEO Metadata -->
+  <meta name="description" content="Get in touch with Nature for Humanity Initiative Ltd. — we’re here to collaborate on sustainability, inclusion, and community projects.">
+  <meta name="keywords" content="contact, Nature for Humanity, NGO, Uganda, sustainability, partnerships, BRICS, environment">
+  <meta name="author" content="Nature for Humanity Initiative Ltd.">
+
+  <!-- Social Media Preview -->
+  <meta property="og:title" content="Contact Us | Nature for Humanity Initiative Ltd.">
+  <meta property="og:description" content="Reach out to collaborate or support our sustainability programs.">
+  <meta property="og:image" content="https://www.natureforhumanity.org/logo.png">
+  <meta property="og:url" content="https://www.natureforhumanity.org/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Nature for Humanity Logo" style="height:60px">
+    <h1>Contact Us</h1>
+    <p><em>Nature’s Hope, Humanity’s Future</em></p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get In Touch</h2>
+      <p>
+        We welcome collaborations, partnerships, and volunteer support.  
+        Whether you represent an organization, a donor, or a community leader — we’d love to hear from you.
+      </p>
+      <p>Email us directly at:  
+        <a href="mailto:info@natureforhumanity.org">info@natureforhumanity.org</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Office Location</h2>
+      <p>
+        <strong>Nature for Humanity Initiative Ltd.</strong><br>
+        Jinja, Uganda<br>
+        <em>“Building Sustainable Communities, Together.”</em>
+      </p>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="mailto:info@natureforhumanity.org" method="post" enctype="text/plain" style="max-width:600px;">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Follow Us</h2>
+      <p>
+        Stay connected with our work on social media:<br>
+        🌿 <a href="https://www.facebook.com/natureforhumanity" target="_blank">Facebook</a> |
+        🔗 <a href="https://www.linkedin.com/company/natureforhumanity" target="_blank">LinkedIn</a> |
+        🕊️ <a href="https://twitter.com/nature4humanity" target="_blank">Twitter</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Find Us on the Map</h2>
+      <iframe 
+        src="https://www.google.com/maps?q=Jinja,%20Uganda&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nature for Humanity Initiative Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Nature for Humanity Initiative Ltd.",
+    "url": "https://www.natureforhumanity.org/contact.html",
+    "description": "Reach out to Nature for Humanity Initiative Ltd. for partnerships, collaborations, or sustainability initiatives.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@natureforhumanity.org",
+      "contactType": "Customer Support",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://www.facebook.com/natureforhumanity",
+      "https://www.linkedin.com/company/natureforhumanity",
+      "https://twitter.com/nature4humanity"
+    ]
+  }
+  </script>
+</body>
+</html>
