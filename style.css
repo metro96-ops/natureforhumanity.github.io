@@ -60,4 +60,127 @@ button:hover {
   z-index: 0;
 }
 
+/* Responsive Header Design */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: linear-gradient(to right, #4CAF50, #2E8B57);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.org-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #eaffea;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #2E8B57;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/forest-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #3b8d3b;
+}
+
+/* Social Bar */
+.social-bar {
+  text-align: center;
+  padding: 15px;
+  background: #f5fff5;
+  border-top: 1px solid #d0eed0;
+}
+
+.social-bar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2E8B57;
+  font-weight: bold;
+}
+.social-bar a:hover {
+  color: #1b5e20;
+}
