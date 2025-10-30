@@ -22,3 +22,12 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll("section").forEach((section) => observer.observe(section));
+
+// === Mobile Navbar Toggle ===
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});
