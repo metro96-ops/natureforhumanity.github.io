@@ -1,229 +1,98 @@
-body {font-family: system-ui, sans-serif; margin:0; padding:0; color:#222;}
-header {text-align:center; background:#e9f5ec; padding:20px;}
-nav a {margin:0 8px; color:#006400; text-decoration:none;}
-nav a:hover {text-decoration:underline;}
-main {max-width:800px; margin:40px auto; padding:0 16px;}
-section {margin-bottom:40px;}
-h1,h2 {color:#006400;}
-footer {text-align:center; background:#f4f4f4; padding:12px; font-size:0.9em;}
-/* === Nature Theme Enhancements === */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
 body {
-  font-family: system-ui, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #e8f5e9, #f0fff0);
-  color: #222;
+  background-color: #f5f9f6;
+  color: #1c3b1c;
   overflow-x: hidden;
 }
 
-header {
-  background: linear-gradient(135deg, #a5d6a7, #81c784);
-  color: #003300;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-button {
-  background-color: #2e7d32;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-button:hover {
-  background-color: #1b5e20;
-}
-
-/* Floating leaf animation */
-@keyframes floatLeaf {
-  0% {transform: translateY(0) rotate(0deg);}
-  100% {transform: translateY(-100vh) rotate(360deg);}
-}
-.leaf {
-  position: fixed;
-  bottom: -20px;
-  animation: floatLeaf 10s linear infinite;
-  opacity: 0.3;
-  z-index: 0;
-}
-
-/* Responsive Header Design */
+/* Header / Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 40px;
-  background: linear-gradient(to right, #4CAF50, #2E8B57);
+  background: linear-gradient(90deg, #2e7d32, #4caf50);
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-  border-radius: 8px;
-}
-
-.org-name {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #eaffea;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    background: #2E8B57;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    width: 100%;
-    display: none;
-    text-align: center;
-  }
-}
+.logo-container { display: flex; align-items: center; gap: 10px; }
+.logo { height: 60px; border-radius: 8px; }
+.org-name { font-weight: 600; font-size: 1.3rem; }
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { color: white; text-decoration: none; font-weight: 500; }
+.nav-links a:hover { text-decoration: underline; }
 
 /* Hero Section */
-.hero {
+.hero-section {
+  height: 85vh;
   background: url('assets/forest-bg.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
-
-.hero::before {
-  content: "";
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
 }
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-.cta-btn {
-  background: #4CAF50;
-  color: white;
+.hero-content { z-index: 2; max-width: 700px; }
+.hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 25px; }
+.cta-button {
+  background: #81c784;
   padding: 12px 25px;
   border-radius: 5px;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s;
 }
+.cta-button:hover { background: #66bb6a; }
 
-.cta-btn:hover {
-  background: #3b8d3b;
+/* Program Cards */
+.programs { padding: 80px 20px; text-align: center; }
+.programs h2 { margin-bottom: 40px; font-size: 2rem; color: #1b5e20; }
+.program-cards {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
 }
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-10px); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card h3 { margin: 15px 0 10px; color: #2e7d32; }
+.card p { padding: 0 15px 20px; font-size: 0.95rem; }
 
-/* Social Bar */
-.social-bar {
+/* Impact Section */
+.impact { background: #e8f5e9; padding: 70px 20px; text-align: center; }
+.impact h2 { color: #1b5e20; margin-bottom: 30px; }
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.stat { font-size: 1.2rem; }
+.stat .count { font-size: 2rem; color: #388e3c; font-weight: bold; display: block; }
+
+/* Footer */
+footer {
+  background: #1b5e20;
+  color: white;
   text-align: center;
-  padding: 15px;
-  background: #f5fff5;
-  border-top: 1px solid #d0eed0;
+  padding: 20px;
+  font-size: 0.9rem;
 }
 
-.social-bar a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #2E8B57;
-  font-weight: bold;
-}
-.social-bar a:hover {
-  color: #1b5e20;
-}
-/* === Mobile Hamburger Menu === */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-
-/* Mobile Layout */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #2E8B57;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    animation: slideDown 0.3s ease;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-}

@@ -31,3 +31,27 @@ mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 });
+
+// === Animated Counter ===
+const counters = document.querySelectorAll(".count");
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute("data-target");
+    const current = +counter.innerText;
+    const increment = target / 150;
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  };
+  updateCount();
+});
+
+// === Mobile Navbar Toggle ===
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
