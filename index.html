@@ -1,162 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="Nature For Humanity Initiative Ltd. empowers communities through clean energy, water access, women empowerment, and climate action.">
-<meta name="keywords" content="sustainability, NGO, nature, humanity, Uganda, climate change, water, women, energy">
-<meta name="author" content="Nature For Humanity Initiative Ltd.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Nature For Humanity Initiative Ltd.">
-<meta property="og:description" content="Empowering communities for a sustainable future.">
-<meta property="og:image" content="https://www.natureforhumanity.org/logo.png">
-<meta property="og:url" content="https://www.natureforhumanity.org">
-<meta property="og:type" content="website">
-
-<!-- Google Analytics (replace with your GA ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nature For Humanity Initiative Ltd.</title>
-  <meta name="description" content="Community-based organization advancing sustainability, clean water, women & youth inclusion, and climate resilience.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* === HERO + BASIC STYLING === */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f4;
+      color: #333;
+    }
 
-  <!-- Favicon & Theme -->
-<link rel="icon" type="image/png" href="assets/favicon-new.png?v=2">
-<link rel="apple-touch-icon" href="assets/favicon-new.png">
-<meta name="theme-color" content="#2b7a2b">
+    h1, h2, h3 {
+      color: #2e7d32;
+    }
+
+    a {
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    /* === BUTTONS === */
+    .btn.primary {
+      background: #2e7d32;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .btn.primary:hover {
+      background: #1b5e20;
+    }
+
+    .btn.ghost {
+      background: #fff;
+      color: #2e7d32;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid #c8e6c9;
+    }
+
+    .btn.ghost:hover {
+      background: #e8f5e9;
+    }
+
+    /* === HERO SECTION === */
+    .hero-home {
+      min-height: 70vh;
+      background: linear-gradient(to right, rgba(46, 125, 50, 0.85), rgba(0, 150, 136, 0.75)),
+                  url('assets/hero-forest.jpg') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 16px;
+    }
+
+    /* === HERO ANIMATIONS === */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(25px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+
+    /* === SCROLL FADE === */
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* === LAYOUTS === */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .program-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+    }
+
+    .programs-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-  <body>
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="assets/favicon-new.png" alt="Nature For Humanity Initiative Logo" class="site-logo">
-        <span class="org-name">Nature For Humanity Initiative Ltd.</span>
-      </div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- === HERO SECTION === -->
+  <section class="hero-home">
+    <img src="assets/favicon.png" alt="Nature For Humanity Logo"
+         class="fade-in delay-1"
+         style="width:90px;height:90px;margin-bottom:12px;border-radius:50%;border:3px solid rgba(255,255,255,0.8);">
 
-  <!-- HERO SECTION -->
-<section class="hero-home" style="
-  min-height:70vh;
-  background:linear-gradient(to right,rgba(46,125,50,0.85),rgba(0,150,136,0.75)),
-             url('assets/hero-forest.jpg') center/cover no-repeat;
-  color:#fff;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:60px 16px;">
-  
-  <img src="assets/favicon.png" alt="Nature For Humanity Logo"
-       class="fade-in delay-1"
-       style="width:90px;height:90px;margin-bottom:12px;border-radius:50%;border:3px solid rgba(255,255,255,0.8);">
-  
-  <h1 class="fade-in delay-2" style="font-size:clamp(2rem,4vw,3rem);margin:0 0 10px;">
-    Nature For Humanity Initiative Ltd.
-  </h1>
-  
-  <p class="fade-in delay-3" style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;line-height:1.6;">
-    Empowering communities to restore balance between people and the planet — 
-    through clean energy, biodiversity, education, and sustainable action.
-  </p>
-  
-  <div class="hero-buttons fade-in delay-3" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
-    <a href="programs.html" class="btn primary" style="
-       background:#2e7d32;color:#fff;padding:12px 24px;border-radius:10px;
-       font-weight:700;text-decoration:none;">🌿 Explore Programs</a>
-    <a href="getinvolved.html" class="btn ghost" style="
-       background:#fff;color:#2e7d32;padding:12px 24px;border-radius:10px;
-       font-weight:700;text-decoration:none;border:1px solid #c8e6c9;">🤝 Get Involved</a>
-  </div>
-</section>
+    <h1 class="fade-in delay-2">Nature For Humanity Initiative Ltd.</h1>
+    <p class="fade-in delay-3" style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;line-height:1.6;">
+      Empowering communities to restore balance between people and the planet —
+      through clean energy, biodiversity, education, and sustainable action.
+    </p>
 
-  
-  <img src="assets/favicon.png" alt="Nature For Humanity Logo"
-       style="width:90px;height:90px;margin-bottom:12px;border-radius:50%;border:3px solid rgba(255,255,255,0.8);">
-  
-  <h1 style="font-size:clamp(2rem,4vw,3rem);margin:0 0 10px;">Nature For Humanity Initiative Ltd.</h1>
-  
-  <p style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;line-height:1.6;">
-    Empowering communities to restore balance between people and the planet — 
-    through clean energy, biodiversity, education, and sustainable action.
-  </p>
-  
-  <div class="hero-buttons" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
-    <a href="programs.html" class="btn primary" style="
-       background:#2e7d32;color:#fff;padding:12px 24px;border-radius:10px;
-       font-weight:700;text-decoration:none;">🌿 Explore Programs</a>
-    <a href="getinvolved.html" class="btn ghost" style="
-       background:#fff;color:#2e7d32;padding:12px 24px;border-radius:10px;
-       font-weight:700;text-decoration:none;border:1px solid #c8e6c9;">🤝 Get Involved</a>
-  </div>
-</section>
-
-
-  <!-- PROGRAMS -->
-  <section class="programs">
-    <h2>Our Core Focus Areas</h2>
-    <div class="program-cards">
-      <div class="card">
-        <img src="assets/water.jpg" alt="Clean Water">
-        <h3>Clean Water Access</h3>
-        <p>Ensuring every child and family has access to safe and sustainable water sources.</p>
-      </div>
-      <div class="card">
-        <img src="assets/energy.jpg" alt="Renewable Energy">
-        <h3>Renewable Energy</h3>
-        <p>Providing off-grid solar solutions and training local communities in energy innovation.</p>
-      </div>
-      <div class="card">
-        <img src="assets/trees.jpg" alt="Climate Action">
-        <h3>Climate & Reforestation</h3>
-        <p>Restoring ecosystems and educating youth to champion climate resilience.</p>
-      </div>
+    <div class="hero-buttons fade-in delay-3" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
+      <a href="programs.html" class="btn primary">🌿 Explore Programs</a>
+      <a href="getinvolved.html" class="btn ghost">🤝 Get Involved</a>
     </div>
   </section>
 
-  <!-- IMPACT COUNTER -->
-  <section class="impact">
-    <h2>Our Impact in Numbers</h2>
-    <div class="stats">
-      <div class="stat">
-        <span class="count" data-target="12000">0</span><p>Trees Planted</p>
-      </div>
-      <div class="stat">
-        <span class="count" data-target="4500">0</span><p>People Reached</p>
-      </div>
-      <div class="stat">
-        <span class="count" data-target="30">0</span><p>Communities Served</p>
-      </div>
-    </div>
+  <!-- === MISSION SECTION === -->
+  <section class="scroll-fade" style="background:#f9f9f9;">
+    <h2>Our Mission</h2>
+    <p style="max-width:800px;margin:0 auto;font-size:1.1rem;line-height:1.6;">
+      We believe that nature and humanity must thrive together. Our mission is to create
+      resilient, inclusive communities that protect biodiversity, promote renewable energy,
+      and build a sustainable future for generations to come.
+    </p>
   </section>
 
-  <!-- FOOTER -->
+  <!-- === PROGRAMS SECTION === -->
+  <section class="scroll-fade">
+    <h2>Our Core Programs</h2>
+    <div class="programs-container">
+      <div class="program-card scroll-fade">
+        <h3>🌱 Reforestation & Carbon Offsets</h3>
+        <p>Planting native trees and supporting forest regeneration to combat climate change.</p>
+      </div>
+      <div class="program-card scroll-fade">
+        <h3>🐝 Biodiversity & Pollinator Protection</h3>
+        <p>Safeguarding bees, birds, and wildlife to ensure ecosystem balance and food security.</p>
+      </div>
+      <div class="program-card scroll-fade">
+        <h3>⚡ Renewable Energy & Clean Water</h3>
+        <p>Empowering villages with solar power, water systems, and climate-smart solutions.</p>
+      </div>
+      <div class="program-card scroll-fade">
+        <h3>🏃 Sports for Community Growth</h3>
+        <p>Using football and sports to educate youth about leadership, health, and climate action.</p>
+      </div>
+    </div>
+    <a href="programs.html" class="btn primary" style="margin-top:30px;display:inline-block;">🌿 Explore All Programs</a>
+  </section>
+
+  <!-- === GET INVOLVED SECTION === -->
+  <section class="scroll-fade" style="background:#e8f5e9;">
+    <h2>Get Involved</h2>
+    <p style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;">
+      Whether you're an individual, organization, or supporter — your involvement makes a difference.
+      Join our volunteer projects, partner with us, or support our environmental campaigns.
+    </p>
+    <a href="getinvolved.html" class="btn ghost">🤝 Fill Interest Form</a>
+  </section>
+
+  <!-- === FOOTER === -->
   <footer>
-    <p>© <span id="year"></span> Nature for Humanity Initiative Ltd. | Jinja, Uganda</p>
+    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- === SCROLL ANIMATION SCRIPT === -->
+  <script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    scrollElements.forEach(el => observer.observe(el));
+  </script>
 </body>
-
 </html>
-
