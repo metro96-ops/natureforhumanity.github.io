@@ -146,4 +146,17 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(34, 139, 34, 0.4);
 }
+/* Sticky Header */
+.site-header {
+  position: sticky;  /* This makes it stay fixed at top while scrolling */
+  top: 0;
+  z-index: 1000;     /* Keeps it above all other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f5fdf5;
+  border-bottom: 2px solid #e0f0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
