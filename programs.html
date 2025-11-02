@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Programs | Nature For Humanity Initiative Ltd.</title>
+
+  <link rel="icon" type="image/png" href="assets/favicon-new.png?v=2" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ===== Hybrid Balance page accents ===== */
+    :root{
+      --g1:#2e7d32; --g2:#00bfa5; --ink:#234223; --bg:#f7fbf8; --card:#ffffff;
+      --line:#e1efe4; --soft:#eff8ef;
+    }
+    body{background:var(--bg); color:var(--ink);}
+
+    .hero{
+      min-height:42vh; display:grid; place-items:center; text-align:center; color:#fff;
+      background:linear-gradient(135deg, rgba(46,125,50,.80), rgba(0,191,165,.80)),
+                 url('assets/forest-bg.jpg') center/cover no-repeat;
+      padding:48px 16px;
+    }
+    .hero h1{font-size:clamp(1.9rem,3.6vw,3rem); margin:0 0 10px;}
+    .hero p{opacity:.98; max-width:820px; margin:0 auto;}
+
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 16px 60px;}
+    .subnav{display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin:16px 0 26px;}
+    .chip{background:var(--soft); border:1px solid #d9ecd9; color:#1b5e20; padding:8px 12px; border-radius:999px; text-decoration:none; font-weight:700;}
+    .chip:hover{background:#e6f4e6;}
+
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px;}
+    .card{
+      grid-column:span 6; background:var(--card); border:1px solid var(--line); border-radius:14px;
+      box-shadow:0 6px 18px rgba(0,0,0,.06); overflow:hidden; transition:transform .25s, box-shadow .25s;
+    }
+    .card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,.09);}
+    .card img{width:100%; height:200px; object-fit:cover; display:block;}
+    .card-body{padding:16px 18px 18px;}
+    .card h3{margin:4px 0 8px; color:#2e7d32; font-size:1.15rem;}
+    .card p{margin:0 0 12px; color:#2b472b; line-height:1.6;}
+    .goal{font-weight:700; color:#1a662a; font-size:.95rem;}
+
+    .cta{
+      margin-top:36px; padding:24px 18px; text-align:center;
+      background:linear-gradient(90deg,#e8f5e9,#edf8ff); border:1px solid #d8ead9; border-radius:14px;
+    }
+    .cta h2{margin:0 0 8px; color:#1b5e20;}
+    .cta p{margin:0 0 16px;}
+    .cta .actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap;}
+    .btn{display:inline-block; text-decoration:none; font-weight:800; padding:10px 16px; border-radius:10px; border:1px solid transparent;}
+    .btn.primary{background:var(--g1); color:#fff;}
+    .btn.primary:hover{background:#286f2c;}
+    .btn.ghost{background:#fff; color:var(--g1); border-color:#bfe3bf;}
+    .btn.ghost:hover{background:#f5fff5;}
+    .note{margin-top:12px; font-size:.92rem; color:#355a35;}
+
+    /* Carbon counter block */
+    .carbon{
+      margin:50px auto 70px; max-width:700px; text-align:center; border-radius:16px;
+      background:linear-gradient(90deg,#e6f9ee,#e3f4ff); box-shadow:0 6px 16px rgba(0,0,0,.08); padding:28px 22px;
+    }
+    .counter{
+      display:inline-block; background:#fff; border-radius:12px; border:1px solid #bce5c2;
+      padding:12px 26px; font-size:2rem; font-weight:800; color:#1b5e20; min-width:250px;
+    }
+    .bar-wrap{margin:20px auto 8px; width:90%; max-width:500px; height:18px; background:#d4f3da; border-radius:9px; overflow:hidden;}
+    .bar{height:100%; width:0%; background:linear-gradient(90deg,var(--g1),var(--g2)); transition:width .4s ease; border-radius:9px;}
+
+    @media (max-width:900px){
+      .card{grid-column:span 12;}
+      .card img{height:180px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reuse your sticky header styles from style.css -->
+  <header class="site-header">
+    <img src="assets/favicon-new.png" alt="Nature For Humanity Logo" class="site-logo" />
+    <h1>Nature For Humanity Initiative Ltd.</h1>
+  </header>
+
+  <nav style="text-align:center;margin:8px 0 0;font-weight:700">
+    <a href="index.html">Home</a> ·
+    <a href="programs.html">Programs</a> ·
+    <a href="getinvolved.html">Get Involved</a> ·
+    <a href="about.html">About</a> ·
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Our Programs</h1>
+      <p>Community-powered solutions that restore ecosystems, strengthen resilience, and deliver measurable climate impact.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+
+    <!-- quick jumps -->
+    <nav class="subnav" aria-label="Program shortcuts">
+      <a href="#carbon" class="chip">Reforestation & Carbon</a>
+      <a href="#water" class="chip">Water & Sanitation</a>
+      <a href="#energy" class="chip">Renewable Energy</a>
+      <a href="#biodiversity" class="chip">Biodiversity & Wildlife</a>
+      <a href="#women" class="chip">Women & Community</a>
+      <a href="#youth" class="chip">Youth Innovation</a>
+      <a href="#sports" class="chip">Sports for Sustainability</a>
+      <a href="#education" class="chip">Education & Research</a>
+    </nav>
+
+    <section class="grid">
+      <!-- 1. Reforestation & Carbon -->
+      <article class="card" id="carbon">
+        <img src="assets/trees.jpg" alt="Reforestation and carbon sinks">
+        <div class="card-body">
+          <h3>Community Reforestation & Carbon Offsets</h3>
+          <p>We restore native forests and agroforestry systems that capture CO₂, cool local microclimates, protect soils, and support livelihoods. Every planting season feeds our living carbon network.</p>
+          <p class="goal">Goal: 100,000 native trees and verified community carbon gains by 2028.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 2. Water & Sanitation -->
+      <article class="card" id="water">
+        <img src="assets/water.jpg" alt="Water access and sanitation">
+        <div class="card-body">
+          <h3>Water & Sanitation for Life</h3>
+          <p>We rehabilitate boreholes, harvest rainwater, and train communities on safe hygiene. Efficient water systems reduce the energy and carbon costs of access and treatment.</p>
+          <p class="goal">Goal: Safe, sustainable water for 25,000 people.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 3. Renewable Energy -->
+      <article class="card" id="energy">
+        <img src="assets/energy.jpg" alt="Community solar installation">
+        <div class="card-body">
+          <h3>Renewable Energy for All</h3>
+          <p>Solar for schools and clinics, cleaner cooking, and practical training for local technicians. Replacing fossil and wood fuels cuts emissions and unlocks opportunity.</p>
+          <p class="goal">Goal: Reliable clean energy for 10,000+ households by 2026.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 4. Biodiversity & Wildlife -->
+      <article class="card" id="biodiversity">
+        <img src="assets/bees-birds.jpg" alt="Pollinators and wildlife">
+        <div class="card-body">
+          <h3>Biodiversity & Wildlife Protection</h3>
+          <p>Protecting pollinators, birds, and habitats through native planting, corridor restoration, and community stewardship. Healthy ecosystems are the foundation of climate resilience.</p>
+        <p class="goal">Goal: Thriving pollinator corridors and bird-friendly landscapes.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 5. Women & Community Leadership (subtle inclusion) -->
+      <article class="card" id="women">
+        <img src="assets/women.jpg" alt="Women leading climate action">
+        <div class="card-body">
+          <h3>Women, Children & Community Leadership</h3>
+          <p>We support climate-smart livelihoods, micro-enterprise, and local governance. Programs welcome safe participation from community members of different backgrounds and experiences.</p>
+          <p class="goal">Goal: 500+ local leaders equipped to drive climate solutions.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 6. Youth Innovation -->
+      <article class="card" id="youth">
+        <img src="assets/youth.jpg" alt="Youth climate innovation">
+        <div class="card-body">
+          <h3>Youth for a Green Future</h3>
+          <p>Bootcamps, exchanges, and service projects that channel creativity into climate solutions. Youth volunteers help track trees and energy projects with simple carbon mapping tools.</p>
+          <p class="goal">Goal: 1,000 youth engaged in hands-on sustainability.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 7. Sports for Sustainability -->
+      <article class="card" id="sports">
+        <img src="assets/sports.jpg" alt="Community football for the planet">
+        <div class="card-body">
+          <h3>Sports for Sustainability & Unity</h3>
+          <p>Through football and community sports, we build teamwork, mental wellness, and eco-action. “Play for the Planet” matches link goals scored to trees planted and event offsets.</p>
+          <p class="goal">Goal: 5,000 youth engaged through eco-sports by 2027.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+
+      <!-- 8. Climate Education & Research -->
+      <article class="card" id="education">
+        <img src="assets/education.jpg" alt="Climate education and research">
+        <div class="card-body">
+          <h3>Climate Education & Research</h3>
+          <p>Eco-clubs, community learning, and place-based research that blends lived experience with practical science. Carbon literacy is woven through all curricula.</p>
+          <p class="goal">Goal: Climate literacy for 50,000 learners by 2028.</p>
+          <a class="btn ghost" href="getinvolved.html">Join This Work</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Carbon counter (visual + % goal) -->
+    <section class="carbon" aria-label="Carbon offset tracker">
+      <h2 style="color:#1b5e20;margin:0 0 8px;">Our Growing Climate Impact</h2>
+      <p style="margin:0 0 14px;color:#274d27;">Estimated Carbon Offset Achieved</p>
+      <div class="counter"><span id="carbonValue">0</span> kg CO₂</div>
+      <div class="bar-wrap"><div class="bar" id="carbonBar"></div></div>
+      <p id="carbonGoalText" style="font-size:.9rem;color:#355a35;">0% of our 50,000 kg CO₂ goal reached</p>
+      <p style="margin-top:10px;color:#385d38;font-size:.9rem;">*Based on trees planted, clean energy adoption, and water restoration projects.</p>
+    </section>
+
+    <!-- CTA (values-first, legally neutral) -->
+    <section class="cta" aria-label="Join our work">
+      <h2>Nature belongs to everyone.</h2>
+      <p>Every project — from trees to energy — builds a living carbon network that restores balance between people and planet.</p>
+      <div class="actions">
+        <a href="getinvolved.html" class="btn primary">Volunteer</a>
+        <a href="getinvolved.html" class="btn ghost">Partner With Us</a>
+      </div>
+      <div class="note">Participation is community-centered and welcoming of different backgrounds, abilities, and experiences.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Live Carbon Counter with Progress Bar
+    const carbonDisplay = document.getElementById("carbonValue");
+    const carbonBar = document.getElementById("carbonBar");
+    const goalText = document.getElementById("carbonGoalText");
+
+    let carbonValue = 0;
+    const target = 12640;  // current estimated offset (kg)
+    const goal = 50000;    // milestone goal (kg)
+    const speed = 20;      // animation speed
+
+    const counter = setInterval(() => {
+      if (carbonValue < target) {
+        carbonValue += Math.ceil((target - carbonValue) / 40);
+        carbonDisplay.textContent = carbonValue.toLocaleString();
+
+        const progress = Math.min((carbonValue / goal) * 100, 100);
+        carbonBar.style.width = progress + "%";
+        goalText.textContent = `${progress.toFixed(1)}% of our ${goal.toLocaleString()} kg CO₂ goal reached`;
+      } else {
+        clearInterval(counter);
+      }
+    }, speed);
+  </script>
+</body>
+</html>
