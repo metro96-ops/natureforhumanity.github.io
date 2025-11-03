@@ -208,3 +208,16 @@ header img {
   border: 3px solid #ffffff22;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+#goal-container {
+  transition: width 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  #goal-container {
+    height: 18px;
+  }
+  #goal-text {
+    font-size: 1rem;
+  }
+}

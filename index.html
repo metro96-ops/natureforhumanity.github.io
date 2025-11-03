@@ -187,6 +187,51 @@
     </p>
     <a href="getinvolved.html" class="btn ghost">🤝 Fill Interest Form</a>
   </section>
+  <!-- === CARBON IMPACT TARGET & SUPPORT SECTION === -->
+<section class="scroll-fade" style="background:#e8f5e9;padding:60px 20px;text-align:center;">
+  <h2 style="color:#2e7d32;">🌍 Our 2025 Carbon Offset Goal</h2>
+  <p style="font-size:1.1rem;margin:10px auto;max-width:600px;">
+    Together, we’re offsetting CO₂ through tree planting, clean energy access, and reforestation projects.
+    Every small contribution pushes us closer to our <strong>1,000,000 kg CO₂ target</strong>.
+  </p>
+
+  <div id="goal-container" style="background:#c8e6c9;border-radius:20px;max-width:600px;margin:20px auto;height:25px;overflow:hidden;">
+    <div id="goal-progress" style="background:#2e7d32;height:100%;width:0%;border-radius:20px;"></div>
+  </div>
+
+  <p id="goal-text" style="font-weight:bold;color:#2e7d32;font-size:1.2rem;margin-top:10px;">0% of our goal achieved</p>
+
+  <a href="getinvolved.html" style="
+     display:inline-block;
+     background:#2e7d32;
+     color:#fff;
+     padding:12px 28px;
+     margin-top:25px;
+     border-radius:10px;
+     text-decoration:none;
+     font-weight:700;
+     box-shadow:0 4px 10px rgba(0,0,0,0.15);
+     transition:0.3s;">❤️ Support Our Mission</a>
+</section>
+
+<script>
+  // === DYNAMIC CARBON COUNTER + TARGET PROGRESS ===
+  let currentCO2 = 250000; // current carbon offset in kg
+  const targetCO2 = 1000000; // goal
+  const counterEl = document.getElementById("carbon-counter");
+  const progressBar = document.getElementById("goal-progress");
+  const goalText = document.getElementById("goal-text");
+
+  function updateProgress() {
+    currentCO2 += Math.floor(Math.random() * 15) + 5;
+    const percentage = Math.min((currentCO2 / targetCO2) * 100, 100).toFixed(1);
+    if (counterEl) counterEl.textContent = currentCO2.toLocaleString();
+    progressBar.style.width = percentage + "%";
+    goalText.textContent = `${percentage}% of our goal achieved`;
+  }
+  setInterval(updateProgress, 1500);
+</script>
+
 
   <!-- === FOOTER === -->
   <footer>
