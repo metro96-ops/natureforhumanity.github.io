@@ -3,107 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Nature for Humanity Initiative Ltd.</title>
-
-  <!-- SEO Metadata -->
-  <meta name="description" content="Learn about Nature for Humanity Initiative Ltd. — a community-based organization advancing sustainability, inclusion, clean energy, and climate resilience in Africa.">
-  <meta name="keywords" content="Nature for Humanity, NGO, sustainability, climate, renewable energy, Uganda, inclusion, community development">
-  <meta name="author" content="Nature for Humanity Initiative Ltd.">
-
-  <!-- Social Media Preview -->
-  <meta property="og:title" content="About Us | Nature for Humanity Initiative Ltd.">
-  <meta property="og:description" content="Empowering communities for a sustainable future through inclusion, renewable energy, and climate action.">
-  <meta property="og:image" content="https://www.natureforhumanity.org/logo.png">
-  <meta property="og:url" content="https://www.natureforhumanity.org/about.html">
-  <meta name="twitter:card" content="summary_large_image">
-
+  <title>About Us | Nature For Humanity Initiative Ltd.</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/favicon-new.png?v=2">
 
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f4f9f4;
+      color: #333;
+    }
 
+    header {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      color: #2e7d32;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .intro {
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 40px 20px;
+    }
+
+    .values, .themes {
+      background: #e8f5e9;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .themes h3 {
+      color: #1b5e20;
+    }
+
+    .themes ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .themes li {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 250px;
+      flex: 1 1 200px;
+    }
+
+    .founder {
+      background: #fff;
+      border-left: 6px solid #2e7d32;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body>
+  <!-- HEADER -->
   <header>
-    <img src="assets/favicon-new.png" alt="Nature For Humanity Initiative Logo" class="site-logo">
+    <img src="assets/favicon.png" alt="Logo">
     <h1>About Us</h1>
-    <p><em>Nature’s Hope, Humanity’s Future</em></p>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="getinvolved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Who We Are</h2>
-      <p>
-        Nature for Humanity Initiative Ltd. is a registered community-based organization based in Uganda, working at the intersection of environment, inclusion, and sustainability. 
-        We are driven by a belief that the health of our planet and the well-being of humanity are inseparable.
-      </p>
-    </section>
+  <!-- INTRO -->
+  <section class="intro scroll-fade">
+    <h2>Our Story</h2>
+    <p>
+      Founded with a vision to bridge the gap between humanity and nature,
+      <strong>Nature For Humanity Initiative Ltd.</strong> is a community-based organization
+      committed to advancing sustainable development across Africa. We believe that empowering
+      local communities is the key to climate resilience, social inclusion, and biodiversity protection.
+    </p>
+    <p>
+      Our work spans clean energy, water, biodiversity, sports, and education — ensuring that
+      no one is left behind in the global climate transformation.
+    </p>
+  </section>
 
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-        To empower communities through nature-based solutions that promote renewable energy, water conservation, gender equity, youth engagement, and climate resilience.
-      </p>
-    </section>
+  <!-- VALUES -->
+  <section class="values scroll-fade">
+    <h2>Our Mission & Values</h2>
+    <p>
+      We exist to empower communities to protect ecosystems, promote climate awareness, and
+      create sustainable livelihoods. Our core values are sustainability, inclusivity, and integrity.
+    </p>
+  </section>
 
-    <section>
-      <h2>Our Vision</h2>
-      <p>
-        A world where humanity and nature thrive together — where communities are sustainable, inclusive, and resilient to climate change.
-      </p>
-    </section>
+  <!-- THEMES -->
+  <section class="themes scroll-fade">
+    <h2>Our Thematic Areas</h2>
+    <ul>
+      <li>
+        <h3>🌱 Biodiversity & Reforestation</h3>
+        <p>Restoring degraded ecosystems through native tree planting and wildlife protection.</p>
+      </li>
+      <li>
+        <h3>⚡ Clean Energy & Water Access</h3>
+        <p>Delivering solar power and clean water to rural communities to reduce poverty and emissions.</p>
+      </li>
+      <li>
+        <h3>🐝 Pollinator & Bird Conservation</h3>
+        <p>Safeguarding pollinators and promoting habitats that sustain biodiversity and agriculture.</p>
+      </li>
+      <li>
+        <h3>🏃 Sports for Development</h3>
+        <p>Using football and local sports as tools for education, leadership, and environmental unity.</p>
+      </li>
+      <li>
+        <h3>🌍 Inclusion & Community Empowerment</h3>
+        <p>Building equitable opportunities for women, youth, and vulnerable groups to participate in change.</p>
+      </li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Our Key Focus Areas</h2>
-      <ul>
-        <li>🌱 Environmental restoration & climate education</li>
-        <li>💧 Water access and sustainable sanitation</li>
-        <li>⚡ Renewable energy for rural communities</li>
-        <li>♀️ Empowerment of women and children</li>
-        <li>🤝 Community development through sports and innovation</li>
-      </ul>
-    </section>
+  <!-- FOUNDER MESSAGE -->
+  <section class="founder scroll-fade">
+    <h2>Message from the Founder</h2>
+    <p>
+      “Nature for Humanity Initiative was born out of a simple yet powerful belief — that humanity’s
+      greatest strength lies in its ability to care, adapt, and restore. Every tree we plant,
+      every child we teach, and every village we empower brings us closer to a fairer, greener world.”
+    </p>
+    <p><strong>— Magoola Scanlen Derrick, Founder & Volunteer</strong></p>
+  </section>
 
-    <section>
-      <h2>Our Approach</h2>
-      <p>
-        We build partnerships with local communities, schools, and global organizations to translate climate action into measurable impact. 
-        Through education, practical solutions, and advocacy, we create pathways to inclusive and sustainable futures.
-      </p>
-    </section>
-  </main>
-
+  <!-- FOOTER -->
   <footer>
-    <p>© <span id="year"></span> Nature for Humanity Initiative Ltd. All rights reserved.</p>
+    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
   </footer>
 
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Nature for Humanity Initiative Ltd.",
-    "url": "https://www.natureforhumanity.org",
-    "logo": "https://www.natureforhumanity.org/logo.png",
-    "description": "Nature for Humanity Initiative Ltd. is a Ugandan community-based organization promoting sustainability, inclusion, renewable energy, and climate action across Africa.",
-    "email": "info@natureforhumanity.org",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "UG",
-      "addressRegion": "Jinja"
-    },
-    "sameAs": [
-      "https://www.facebook.com/natureforhumanity",
-      "https://www.linkedin.com/company/natureforhumanity",
-      "https://twitter.com/nature4humanity"
-    ]
-  }
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    scrollElements.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
