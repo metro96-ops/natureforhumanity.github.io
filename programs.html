@@ -125,105 +125,64 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <img src="assets/favicon.png" alt="Nature for Humanity Logo">
-    <h1>Our Programs</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="getinvolved.html">Get Involved</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <!-- ====== PROGRAMS PAGE ====== -->
+<section class="programs">
+  <h1>Our Programs</h1>
+  <p>We implement multi-sector programs that connect people, nature, and technology to build resilient communities and ecosystems across Africa.</p>
 
-  <!-- PROGRAMS SECTION -->
-  <section class="scroll-fade">
-    <h2 style="text-align:center;">What We Do</h2>
-    <p style="max-width:800px;margin:0 auto;text-align:center;">
-      Our programs address the intersections of energy, water, biodiversity, and human development —
-      working closely with communities to protect ecosystems and improve lives.
-    </p>
-  </section>
-
-  <div class="programs-container">
-    <div class="program-card scroll-fade">
-      <h3>🌳 Reforestation & Carbon Offsets</h3>
-      <p>
-        We organize large-scale tree planting and reforestation efforts across Uganda and East Africa.
-        Each tree planted contributes to community carbon offset goals, helping combat deforestation
-        and restore degraded lands.
-      </p>
-    </div>
-
-    <div class="program-card scroll-fade">
-      <h3>🐝 Biodiversity & Pollinator Protection</h3>
-      <p>
-        Our bee and bird conservation program safeguards pollinator habitats,
-        ensuring food security and ecosystem stability. We train locals in sustainable beekeeping
-        and organic farming techniques.
-      </p>
-    </div>
-
-    <div class="program-card scroll-fade">
-      <h3>💧 Clean Water & Climate Resilience</h3>
-      <p>
-        We implement solar-powered water systems and rainwater harvesting to help communities
-        adapt to the changing climate, ensuring reliable access to clean and safe water.
-      </p>
-    </div>
-
-    <div class="program-card scroll-fade">
-      <h3>⚡ Renewable Energy Access</h3>
-      <p>
-        Through partnerships, we deploy affordable solar lighting and clean energy solutions
-        to schools, clinics, and low-income homes — powering education and health.
-      </p>
-    </div>
-
-    <div class="program-card scroll-fade">
-      <h3>🏃 Sports for Change</h3>
-      <p>
-        Our Sports for Climate Action program uses football and community sports
-        to engage youth in leadership, teamwork, and sustainability education.
-      </p>
-    </div>
-
-    <div class="program-card scroll-fade">
-      <h3>🌸 Community Gardens & Eco-Entrepreneurship</h3>
-      <p>
-        We help women and youth establish eco-gardens that produce food, flowers, and herbal products.
-        These projects build self-reliance while restoring biodiversity and soil health.
-      </p>
-    </div>
+  <!-- === Reforestation Program === -->
+  <div class="program">
+    <img src="assets/placeholder-reforestation.jpg" alt="Reforestation Program">
+    <h2>🌱 Reforestation & Carbon Offset</h2>
+    <p>We restore degraded landscapes by planting native trees and promoting community-led conservation. Each tree planted contributes to our live carbon offset counter and empowers local farmers to protect their environment.</p>
   </div>
 
-  <section class="scroll-fade" style="text-align:center;background:#e8f5e9;padding:60px 20px;">
-    <h2>Join or Support Our Work</h2>
-    <p style="max-width:700px;margin:0 auto 20px;">
-      Volunteers, donors, and partners are the heart of what we do.
-      Together, we can expand our impact across communities and ecosystems.
-    </p>
-    <a href="getinvolved.html" class="btn primary">🤝 Get Involved</a>
-  </section>
+  <!-- === Clean Energy === -->
+  <div class="program">
+    <img src="assets/placeholder-energy.jpg" alt="Clean Energy">
+    <h2>☀️ Clean Energy & Climate Adaptation</h2>
+    <p>Access to renewable energy is a human right. We distribute solar lamps, train youth in green technologies, and reduce carbon footprints by transitioning rural communities away from fossil fuels.</p>
+  </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
-  </footer>
+  <!-- === Biodiversity & Bee Protection === -->
+  <div class="program">
+    <img src="assets/placeholder-bees.jpg" alt="Bee Protection">
+    <h2>🐝 Biodiversity & Bee Conservation</h2>
+    <p>Bees are vital for pollination and ecosystem balance. We protect wild bee habitats, educate farmers, and promote sustainable honey production to fight biodiversity loss.</p>
+  </div>
 
-  <!-- SCROLL ANIMATION SCRIPT -->
-  <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    scrollElements.forEach(el => observer.observe(el));
-  </script>
+  <!-- === Sports for Development === -->
+  <div class="program">
+    <img src="assets/placeholder-sports.jpg" alt="Sports for Development">
+    <h2>⚽ Sports for Community Empowerment</h2>
+    <p>We use football and sports programs to unite youth, promote peace, and deliver climate education. Each game becomes an opportunity for awareness and community building.</p>
+  </div>
+
+  <!-- === Women & Sustainability Leadership === -->
+  <div class="program">
+    <img src="assets/placeholder-women.jpg" alt="Women Leadership">
+    <h2>🌸 Women in Sustainability Leadership</h2>
+    <p>We champion women's leadership in clean energy, environmental governance, and entrepreneurship. Empowering women transforms families and communities.</p>
+  </div>
+
+  <!-- === Child Education === -->
+  <div class="program">
+    <img src="assets/placeholder-education.jpg" alt="Child Education">
+    <h2>🧒 Child Education & Digital Literacy</h2>
+    <p>We equip children with coding, digital, and environmental skills for the future. Our volunteers mentor young learners in rural schools to inspire the next generation of innovators.</p>
+  </div>
+</section>
+
+<!-- ====== CALL TO ACTION ====== -->
+<section class="cta">
+  <h2>Ready to Make a Difference?</h2>
+  <p>Volunteer, partner, or donate to help us expand these programs across Africa.</p>
+  <a href="getinvolved.html" class="btn">Get Involved</a>
+</section>
+
+<footer>
+  <p>© 2025 Nature For Humanity Initiative Ltd</p>
+</footer>
+
 </body>
 </html>

@@ -171,130 +171,106 @@
 </head>
 
 <body>
-  <!-- === HERO SECTION === -->
-  <section class="hero-home">
-    <img src="assets/favicon.png" alt="Nature For Humanity Logo"
-         class="fade-in delay-1"
-         style="width:90px;height:90px;margin-bottom:12px;border-radius:50%;border:3px solid rgba(255,255,255,0.8);">
-
-    <h1 class="fade-in delay-2">Nature For Humanity Initiative Ltd.</h1>
-    <p class="fade-in delay-3" style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;line-height:1.6;">
-      Empowering communities to restore balance between people and the planet —
-      through clean energy, biodiversity, education, and sustainable action.
-    </p>
-
-    <div class="hero-buttons fade-in delay-3" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
-      <a href="programs.html" class="btn primary">🌿 Explore Programs</a>
-      <a href="getinvolved.html" class="btn ghost">🤝 Get Involved</a>
-    </div>
-  </section>
-
-  <!-- === MISSION SECTION === -->
-  <section class="scroll-fade" style="background:#f9f9f9;">
-    <h2>Our Mission</h2>
-    <p style="max-width:800px;margin:0 auto;font-size:1.1rem;line-height:1.6;">
-      We believe that nature and humanity must thrive together. Our mission is to create
-      resilient, inclusive communities that protect biodiversity, promote renewable energy,
-      and build a sustainable future for generations to come.
-    </p>
-  </section>
-
-  <!-- === PROGRAMS SECTION === -->
-  <section class="scroll-fade">
-    <h2>Our Core Programs</h2>
-    <div class="programs-container">
-      <div class="program-card scroll-fade">
-        <h3>🌱 Reforestation & Carbon Offsets</h3>
-        <p>Planting native trees and supporting forest regeneration to combat climate change.</p>
-      </div>
-      <div class="program-card scroll-fade">
-        <h3>🐝 Biodiversity & Pollinator Protection</h3>
-        <p>Safeguarding bees, birds, and wildlife to ensure ecosystem balance and food security.</p>
-      </div>
-      <div class="program-card scroll-fade">
-        <h3>⚡ Renewable Energy & Clean Water</h3>
-        <p>Empowering villages with solar power, water systems, and climate-smart solutions.</p>
-      </div>
-      <div class="program-card scroll-fade">
-        <h3>🏃 Sports for Community Growth</h3>
-        <p>Using football and sports to educate youth about leadership, health, and climate action.</p>
-      </div>
-    </div>
-    <a href="programs.html" class="btn primary" style="margin-top:30px;display:inline-block;">🌿 Explore All Programs</a>
-  </section>
-
-  <!-- === GET INVOLVED SECTION === -->
-  <section class="scroll-fade" style="background:#e8f5e9;">
-    <h2>Get Involved</h2>
-    <p style="max-width:700px;margin:0 auto 24px;font-size:1.1rem;">
-      Whether you're an individual, organization, or supporter — your involvement makes a difference.
-      Join our volunteer projects, partner with us, or support our environmental campaigns.
-    </p>
-    <a href="getinvolved.html" class="btn ghost">🤝 Fill Interest Form</a>
-  </section>
-  <!-- === CARBON IMPACT TARGET & SUPPORT SECTION === -->
-<section class="scroll-fade" style="background:#e8f5e9;padding:60px 20px;text-align:center;">
-  <h2 style="color:#2e7d32;">🌍 Our 2025 Carbon Offset Goal</h2>
-  <p style="font-size:1.1rem;margin:10px auto;max-width:600px;">
-    Together, we’re offsetting CO₂ through tree planting, clean energy access, and reforestation projects.
-    Every small contribution pushes us closer to our <strong>1,000,000 kg CO₂ target</strong>.
-  </p>
-
-  <div id="goal-container" style="background:#c8e6c9;border-radius:20px;max-width:600px;margin:20px auto;height:25px;overflow:hidden;">
-    <div id="goal-progress" style="background:#2e7d32;height:100%;width:0%;border-radius:20px;"></div>
+  <!-- ====== HERO SECTION ====== -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Nature For Humanity Initiative Ltd</h1>
+    <p>Building a sustainable, inclusive, and resilient future through clean energy, biodiversity conservation, and community empowerment in Africa.</p>
+    <a href="getinvolved.html" class="btn">Support Our Work</a>
   </div>
-
-  <p id="goal-text" style="font-weight:bold;color:#2e7d32;font-size:1.2rem;margin-top:10px;">0% of our goal achieved</p>
-
-  <a href="getinvolved.html" style="
-     display:inline-block;
-     background:#2e7d32;
-     color:#fff;
-     padding:12px 28px;
-     margin-top:25px;
-     border-radius:10px;
-     text-decoration:none;
-     font-weight:700;
-     box-shadow:0 4px 10px rgba(0,0,0,0.15);
-     transition:0.3s;">❤️ Support Our Mission</a>
+  <!-- Placeholder for hero image -->
+  <div class="hero-image">
+    <img src="assets/placeholder-hero.jpg" alt="Hero Image - Nature and Humanity" />
+  </div>
 </section>
 
-<script>
-  // === DYNAMIC CARBON COUNTER + TARGET PROGRESS ===
-  let currentCO2 = 250000; // current carbon offset in kg
-  const targetCO2 = 1000000; // goal
-  const counterEl = document.getElementById("carbon-counter");
-  const progressBar = document.getElementById("goal-progress");
-  const goalText = document.getElementById("goal-text");
+<!-- ====== MISSION STATEMENT ====== -->
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p>
+    Nature For Humanity Initiative Ltd is a community-based organization working to restore ecosystems,
+    promote renewable energy, and empower vulnerable communities—especially women, youth, and children.
+    Through inclusion, education, and innovation, we drive climate resilience for all.
+  </p>
+  <!-- Placeholder for mission image -->
+  <div class="image-placeholder">
+    <img src="assets/placeholder-mission.jpg" alt="Community Tree Planting">
+  </div>
+</section>
 
-  function updateProgress() {
-    currentCO2 += Math.floor(Math.random() * 15) + 5;
-    const percentage = Math.min((currentCO2 / targetCO2) * 100, 100).toFixed(1);
-    if (counterEl) counterEl.textContent = currentCO2.toLocaleString();
-    progressBar.style.width = percentage + "%";
-    goalText.textContent = `${percentage}% of our goal achieved`;
-  }
-  setInterval(updateProgress, 1500);
-</script>
-
-
-  <!-- === FOOTER === -->
-  <footer>
-    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
-  </footer>
-
-  <!-- === SCROLL ANIMATION SCRIPT === -->
+<!-- ====== IMPACT NUMBERS / CARBON COUNTER ====== -->
+<section class="impact">
+  <h2>Our Impact in Numbers</h2>
+  <div class="impact-stats">
+    <div class="stat">
+      <h3 id="treesPlanted">0</h3>
+      <p>Trees Planted</p>
+    </div>
+    <div class="stat">
+      <h3 id="communitiesReached">0</h3>
+      <p>Communities Reached</p>
+    </div>
+    <div class="stat">
+      <h3 id="carbonOffset">0</h3>
+      <p>Carbon Offset (kg)</p>
+    </div>
+  </div>
   <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    scrollElements.forEach(el => observer.observe(el));
+    // Simple animated counter
+    const stats = {
+      treesPlanted: 10500,
+      communitiesReached: 38,
+      carbonOffset: 42000
+    };
+    Object.keys(stats).forEach(id => {
+      let count = 0;
+      const target = stats[id];
+      const step = Math.ceil(target / 100);
+      const interval = setInterval(() => {
+        count += step;
+        document.getElementById(id).textContent = count.toLocaleString();
+        if (count >= target) clearInterval(interval);
+      }, 30);
+    });
   </script>
-</body>
+</section>
+
+<!-- ====== PROGRAM PREVIEW SECTION ====== -->
+<section class="programs-preview">
+  <h2>Explore Our Programs</h2>
+  <div class="program-grid">
+    <div class="program-card">
+      <img src="assets/placeholder-reforestation.jpg" alt="Tree Planting Program">
+      <h3>Reforestation & Carbon Offset</h3>
+      <p>We plant native trees to restore ecosystems and combat climate change, empowering local farmers to become environmental stewards.</p>
+      <a href="programs.html" class="btn-small">Explore</a>
+    </div>
+    <div class="program-card">
+      <img src="assets/placeholder-energy.jpg" alt="Clean Energy">
+      <h3>Clean Energy for All</h3>
+      <p>We promote access to solar energy solutions for rural households, reducing dependency on charcoal and improving air quality.</p>
+      <a href="programs.html" class="btn-small">Learn More</a>
+    </div>
+    <div class="program-card">
+      <img src="assets/placeholder-youth.jpg" alt="Youth Programs">
+      <h3>Youth & Inclusion</h3>
+      <p>Empowering young innovators and volunteers to take action for sustainability, inclusivity, and community development.</p>
+      <a href="getinvolved.html" class="btn-small">Join Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DONATION BANNER ====== -->
+<section class="donate-banner">
+  <h2>Every Action Counts 🌍</h2>
+  <p>Your contribution fuels community transformation and helps protect our shared planet. Together, we can change the story.</p>
+  <a href="getinvolved.html" class="btn">Donate or Volunteer</a>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <p>© 2025 Nature For Humanity Initiative Ltd | Building a Sustainable, Inclusive Future</p>
+  <p><a href="contact.html">Contact Us</a> | <a href="programs.html">Our Programs</a> | <a href="getinvolved.html">Get Involved</a></p>
+</footer>
+
 </html>
