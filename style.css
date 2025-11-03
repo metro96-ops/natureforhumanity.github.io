@@ -1,223 +1,319 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+/* ============================
+   NATURE FOR HUMANITY INITIATIVE LTD
+   Final Website Stylesheet
+   Theme: Nature (Green) + Humanity (Blue)
+   ============================ */
 
-body {
-  background-color: #f5f9f6;
-  color: #1c3b1c;
-  overflow-x: hidden;
+/* ---------- GENERAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Header / Navbar */
-.navbar {
+body {
+  color: #1a1a1a;
+  background-color: #f7fdfb;
+  line-height: 1.6;
+}
+
+/* ---------- COLOR PALETTE ---------- */
+:root {
+  --green: #2e8b57;       /* nature */
+  --blue: #0077b6;        /* humanity */
+  --light-green: #a8e6cf;
+  --light-blue: #d0f0fd;
+  --white: #ffffff;
+  --gray: #333333;
+}
+
+/* ---------- HEADER & NAVIGATION ---------- */
+header {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: var(--white);
+  padding: 15px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
-  background: linear-gradient(90deg, #2e7d32, #4caf50);
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  background-color: #f5fdf5;
-  border-bottom: 2px solid #e0f0e0;
+  flex-wrap: wrap;
 }
 
-.site-logo {
-  height: 70px;
-  width: 70px;
-  margin-right: 15px;
+header img {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 
-.site-header h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8em;
-  color: #1a662a;
-}
-
-
-.logo-container { display: flex; align-items: center; gap: 10px; }
-.logo { height: 60px; border-radius: 8px; }
-.org-name { font-weight: 600; font-size: 1.3rem; }
-.nav-links { list-style: none; display: flex; gap: 25px; }
-.nav-links a { color: white; text-decoration: none; font-weight: 500; }
-.nav-links a:hover { text-decoration: underline; }
-
-/* Hero Section */
-.hero-section {
-  height: 85vh;
-  background: url('assets/forest-bg.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-}
-.hero-content { z-index: 2; max-width: 700px; }
-.hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero-content p { font-size: 1.2rem; margin-bottom: 25px; }
-.cta-button {
-  background: #81c784;
-  padding: 12px 25px;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
+nav a {
+  color: var(--white);
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, var(--light-green), var(--light-blue));
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
   transition: background 0.3s;
 }
-.cta-button:hover { background: #66bb6a; }
 
-/* Program Cards */
-.programs { padding: 80px 20px; text-align: center; }
-.programs h2 { margin-bottom: 40px; font-size: 2rem; color: #1b5e20; }
-.program-cards {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+.hero .btn:hover {
+  background-color: var(--green);
 }
-.card {
-  background: white;
-  width: 300px;
+
+.hero-image img {
+  width: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
-.card:hover { transform: translateY(-10px); }
-.card img { width: 100%; height: 200px; object-fit: cover; }
-.card h3 { margin: 15px 0 10px; color: #2e7d32; }
-.card p { padding: 0 15px 20px; font-size: 0.95rem; }
 
-/* Impact Section */
-.impact { background: #e8f5e9; padding: 70px 20px; text-align: center; }
-.impact h2 { color: #1b5e20; margin-bottom: 30px; }
-.stats {
+/* ---------- MISSION SECTION ---------- */
+.mission {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.mission h2 {
+  color: var(--blue);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+}
+
+.mission img {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* ---------- IMPACT SECTION ---------- */
+.impact {
+  text-align: center;
+  background: linear-gradient(90deg, #e6f7f1, #e0f7fa);
+  padding: 50px 10%;
+}
+
+.impact h2 {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 30px;
+}
+
+.impact-stats {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
-.stat { font-size: 1.2rem; }
-.stat .count { font-size: 2rem; color: #388e3c; font-weight: bold; display: block; }
 
-/* Footer */
-footer {
-  background: #1b5e20;
-  color: white;
+.stat h3 {
+  font-size: 2.2rem;
+  color: var(--blue);
+}
+
+.stat p {
+  color: var(--gray);
+}
+
+/* ---------- PROGRAMS PREVIEW ---------- */
+.programs-preview {
+  padding: 70px 10%;
+  background-color: #f2fcf7;
+}
+
+.programs-preview h2 {
   text-align: center;
+  color: var(--green);
+  margin-bottom: 30px;
+}
+
+.program-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.program-card {
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 280px;
   padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.program-card h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.btn-small {
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
   font-size: 0.9rem;
 }
-/* 🌿 Logo Animation Styles */
-.site-logo {
-  height: 70px;
-  width: 70px;
-  margin-right: 15px;
-  border-radius: 50%;
-  opacity: 0;
-  transform: scale(0.9);
-  animation: fadeIn 1.5s ease-out forwards;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+.btn-small:hover {
+  background-color: var(--blue);
 }
 
-/* Fade-in effect when page loads */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
+/* ---------- DONATE BANNER ---------- */
+.donate-banner {
+  text-align: center;
+  padding: 60px 10%;
+  background: linear-gradient(45deg, var(--green), var(--blue));
+  color: var(--white);
+}
+
+.donate-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* ---------- PROGRAMS PAGE ---------- */
+.programs {
+  padding: 60px 10%;
+}
+
+.programs h1 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 15px;
+}
+
+.program {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.program h2 {
+  color: var(--green);
+  margin-top: 10px;
+}
+
+.program img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* ---------- CALL TO ACTION ---------- */
+.cta {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #e0f7fa;
+}
+
+.cta .btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.cta .btn:hover {
+  background-color: var(--green);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #023e8a;
+  color: var(--white);
+  text-align: center;
+  padding: 20px 5%;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #cce7ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+
+  .program-grid {
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-/* Hover effect — slight lift and glow */
-.site-logo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(34, 139, 34, 0.4);
-}
-/* Sticky Header */
-.site-header {
-  position: sticky;  /* This makes it stay fixed at top while scrolling */
-  top: 0;
-  z-index: 1000;     /* Keeps it above all other content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  background-color: #f5fdf5;
-  border-bottom: 2px solid #e0f0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* === Soft Fade-In Animation (for Hero + Buttons) === */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeInUp 1.4s ease forwards;
-}
-
-.fade-in.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.fade-in.delay-2 {
-  animation-delay: 0.4s;
-}
-
-.fade-in.delay-3 {
-  animation-delay: 0.6s;
-}
-
-/* === Scroll-triggered fade-in animation === */
-.scroll-fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1.2s ease, transform 1.2s ease;
-}
-
-.scroll-fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-header img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 3px solid #ffffff22;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-#goal-container {
-  transition: width 1s ease-in-out;
-}
-
-@media (max-width: 600px) {
-  #goal-container {
-    height: 18px;
-  }
-  #goal-text {
-    font-size: 1rem;
+  .program-card {
+    width: 100%;
   }
 }
