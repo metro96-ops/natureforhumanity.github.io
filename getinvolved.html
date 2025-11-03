@@ -1,288 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Involved | Nature For Humanity Initiative Ltd.</title>
-
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 
   <style>
     body {
-      font-family: "Poppins", Arial, sans-serif;
-      background-color: #f7fbf8;
+      font-family: "Poppins", sans-serif;
       margin: 0;
-      padding: 0;
-      color: #1b5e20;
+      background: #f4f9f4;
+      color: #333;
     }
 
     header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #e8f5e9;
-      padding: 16px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
 
     header img {
-      width: 52px;
-      height: 52px;
-      margin-right: 14px;
+      height: 50px;
       border-radius: 50%;
     }
 
-    header h1 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin: 0;
-      color: #1b5e20;
-    }
-
-    nav {
-      text-align: center;
-      background: #2e7d32;
-      padding: 10px 0;
-    }
-
-    nav a {
+    header nav a {
       color: #fff;
-      margin: 0 14px;
-      font-weight: 600;
+      margin: 0 12px;
       text-decoration: none;
+      font-weight: 600;
       transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #c8e6c9;
+    header nav a:hover {
+      text-decoration: underline;
     }
 
-    .hero-involve {
-      min-height: 40vh;
-      background: linear-gradient(to right, rgba(46,125,50,.85), rgba(0,150,136,.75)),
-                  url('assets/teamwork.jpg') center/cover no-repeat;
-      color: #fff; display: flex; align-items: center; justify-content: center;
-      text-align: center; padding: 40px 16px;
-    }
-
-    .hero-involve h1 {
-      font-size: clamp(2rem,4vw,3rem);
-      margin-bottom: 10px;
-    }
-
-    .hero-involve p {
-      font-size: 1.1rem;
-      opacity: .95;
-      max-width: 720px;
-      margin: auto;
-    }
-
-    .page-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 16px;
-    }
-
-    .ways {
-      display: grid;
-      gap: 22px;
-      margin: 20px 0 40px;
-    }
-
-    .way-card {
-      background: #fff;
-      border: 1px solid #dcefdc;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,.05);
-      padding: 20px 22px;
-      transition: .3s ease;
-    }
-
-    .way-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,.08);
-    }
-
-    .way-card h3 {
+    h1, h2 {
       color: #2e7d32;
-      margin: 0 0 8px;
     }
 
-    .way-card p {
-      color: #2f4830;
-      font-size: .97rem;
-      line-height: 1.55;
-      margin: 0;
+    .form-section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     form {
-      background: #f9fcfa;
-      border: 1px solid #e4f0e4;
-      border-radius: 16px;
-      padding: 28px 24px;
-      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
-    form label {
-      display: block;
-      font-weight: 600;
-      margin: 12px 0 6px;
-      color: #1b5e20;
-    }
-
-    form input, form textarea, form select {
-      width: 100%;
-      padding: 10px 12px;
+    input, select, textarea {
+      padding: 12px;
+      border: 1px solid #c8e6c9;
       border-radius: 8px;
-      border: 1px solid #cde5ce;
       font-size: 1rem;
-      outline: none;
-      transition: .2s;
+      width: 100%;
+      box-sizing: border-box;
     }
 
-    form input:focus, form textarea:focus, form select:focus {
-      border-color: #2e7d32;
-      box-shadow: 0 0 0 2px rgba(46,125,50,.15);
+    textarea {
+      resize: vertical;
+      min-height: 100px;
     }
 
-    form button {
+    button {
       background: #2e7d32;
       color: #fff;
-      font-weight: 700;
       border: none;
-      padding: 12px 20px;
+      padding: 14px;
+      font-size: 1rem;
       border-radius: 10px;
-      margin-top: 16px;
       cursor: pointer;
-      transition: .25s ease;
-    }
-
-    form button:hover {
-      background: #256929;
-    }
-
-    .success-msg {
-      display: none;
-      text-align: center;
-      background: #e9f8ec;
-      border: 1px solid #c6e7cc;
-      color: #1b5e20;
-      padding: 16px;
-      border-radius: 12px;
-      margin-top: 20px;
       font-weight: 600;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1b5e20;
+    }
+
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     footer {
+      background: #1b5e20;
+      color: #fff;
       text-align: center;
-      padding: 18px;
-      background: #e8f5e9;
-      color: #1b5e20;
+      padding: 20px;
       font-size: 0.9rem;
-      margin-top: 40px;
     }
 
-    @media (max-width:700px) {
-      .way-card { padding: 16px 18px; }
+    .intro-text {
+      text-align: center;
+      max-width: 800px;
+      margin: 30px auto 40px;
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
   </style>
 </head>
 
 <body>
+  <!-- HEADER -->
+  <header>
+    <img src="assets/favicon.png" alt="Logo">
+    <h1>Get Involved</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="getinvolved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="assets/favicon.png" alt="Nature For Humanity Logo" />
-  <h1>Nature For Humanity Initiative Ltd.</h1>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="programs.html">Programs</a>
-  <a href="getinvolved.html">Get Involved</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section class="hero-involve">
-  <div>
-    <h1>Be Part of the Change</h1>
-    <p>Together, we can build a planet that sustains both nature and humanity — one project, one community, one heart at a time.</p>
-  </div>
-</section>
-
-<main class="page-wrap">
-
-  <section class="ways">
-    <div class="way-card">
-      <h3>🌿 Volunteer</h3>
-      <p>Join hands with local communities to plant trees, promote clean water, and empower youth. Each volunteer action fuels a greener world.</p>
-    </div>
-    <div class="way-card">
-      <h3>🤝 Partner</h3>
-      <p>Collaborate with us through your organization, school, or company. Together, we design sustainable solutions that restore balance and hope.</p>
-    </div>
-    <div class="way-card">
-      <h3>💚 Support</h3>
-      <p>Your donation directly supports climate resilience, biodiversity protection, and community growth across the regions we serve.</p>
-    </div>
+  <!-- INTRO SECTION -->
+  <section class="scroll-fade intro-text">
+    <p>
+      Every action counts. Whether you want to volunteer, become a partner, or donate,
+      your contribution helps us empower communities, restore ecosystems,
+      and create lasting impact across Africa.
+    </p>
   </section>
 
-  <form id="contact-form" action="https://formspree.io/f/movprybq" method="POST">
-    <h2 style="text-align:center;color:#1b5e20;margin-bottom:12px;">Get Involved Form</h2>
+  <!-- FORM SECTION -->
+  <section class="form-section scroll-fade">
+    <h2 style="text-align:center;">Join Our Mission</h2>
+    <form action="https://formspree.io/f/movprybq" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-    <label for="fullname">Full Name</label>
-    <input type="text" id="fullname" name="fullname" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="_replyto" required />
+      <label for="type">I’m Interested In</label>
+      <select id="type" name="type" required>
+        <option value="">Select an option</option>
+        <option value="volunteering">Volunteering</option>
+        <option value="partnership">Partnership</option>
+        <option value="donation">Donation / Sponsorship</option>
+        <option value="other">Other</option>
+      </select>
 
-    <label for="country">Country</label>
-    <input type="text" id="country" name="country" />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us about yourself or your interest..." required></textarea>
 
-    <label for="interest">I want to...</label>
-    <select id="interest" name="interest" required>
-      <option value="">Select one</option>
-      <option value="Volunteer">Volunteer</option>
-      <option value="Partner">Partner</option>
-      <option value="Support">Support / Donate</option>
-    </select>
+      <button type="submit">Submit Interest</button>
+    </form>
+  </section>
 
-    <label for="message">Tell us a little about yourself or your idea</label>
-    <textarea id="message" name="message" rows="4" placeholder="Write here..."></textarea>
+  <!-- CALL TO ACTION -->
+  <section class="scroll-fade" style="text-align:center;margin:60px 0;">
+    <h2>Become Part of the Change</h2>
+    <p style="max-width:700px;margin:0 auto 24px;">
+      We welcome individuals and organizations from all over the world
+      to join our journey toward a sustainable future.
+    </p>
+    <a href="programs.html" class="btn primary">🌿 Explore Our Programs</a>
+  </section>
 
-    <button type="submit">Submit</button>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
+  </footer>
 
-    <div class="success-msg" id="successMsg">✅ Thank you! Your message has been sent successfully. We'll get in touch soon.</div>
-  </form>
-</main>
-
-<footer>
-  © 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.
-</footer>
-
-<script>
-  const form = document.getElementById("contact-form");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
       });
-      if (response.ok) {
-        document.getElementById("successMsg").style.display = "block";
-        form.reset();
-      } else {
-        alert("Oops! Something went wrong. Please try again.");
-      }
-    } catch (err) {
-      alert("Network error. Please check your connection.");
-    }
-  });
-</script>
-
+    }, { threshold: 0.15 });
+    scrollElements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
