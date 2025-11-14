@@ -1,187 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Programs | Nature For Humanity Initiative Ltd.</title>
-  <!-- ===== GOOGLE ANALYTICS (Nature For Humanity Initiative Ltd) ===== -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYDFXCN318"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RYDFXCN318');
-</script>
-<!-- ===== END GOOGLE ANALYTICS ===== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Programs | Nature For Humanity Initiative Ltd</title>
 
-  <!-- ===== SEO + CANONICAL BLOCK (PROGRAMS) ===== -->
-<meta name="description" content="Explore Nature for Humanity Initiative programs — from reforestation and clean energy to youth empowerment and biodiversity protection across Africa.">
-<meta name="keywords" content="reforestation, biodiversity, clean energy, climate action, Uganda, Africa, youth empowerment, sustainability programs">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Programs | Nature For Humanity Initiative Ltd">
-<meta property="og:description" content="Our programs create real impact — trees planted, communities empowered, and nature restored.">
-<meta property="og:image" content="https://www.natureforhumanity.org/assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.natureforhumanity.org/programs.html">
-
-<link rel="canonical" href="https://www.natureforhumanity.org/programs.html">
-<!-- ===== END SEO BLOCK ===== -->
-
-<link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f9f4;
-      color: #333;
-    }
-
-    header {
-      background: #1b5e20;
-      color: #fff;
-      padding: 16px 0;
-      text-align: center;
-    }
-
-    header img {
-      height: 50px;
-      border-radius: 50%;
-      margin-bottom: 5px;
-    }
-
-    header nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2 {
-      color: #2e7d32;
-    }
-
-    .programs-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 60px 20px;
-    }
-
-    .program-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 310px;
-      padding: 24px;
-      text-align: left;
-      transition: transform 0.3s;
-    }
-
-    .program-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .program-card h3 {
-      color: #1b5e20;
-      margin-bottom: 10px;
-    }
-
-    .program-card p {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    footer {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* Scroll Fade */
-    .scroll-fade {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1.2s ease, transform 1.2s ease;
-    }
-    .scroll-fade.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <!-- ====== PROGRAMS PAGE ====== -->
-<section class="programs">
-  <h1>Our Programs</h1>
-  <p>We implement multi-sector programs that connect people, nature, and technology to build resilient communities and ecosystems across Africa.</p>
 
-  <!-- === Reforestation Program === -->
-  <div class="program">
-    <img src="assets/placeholder-reforestation.jpg" alt="Reforestation Program">
-    <h2>🌱 Reforestation & Carbon Offset</h2>
-    <p>We restore degraded landscapes by planting native trees and promoting community-led conservation. Each tree planted contributes to our live carbon offset counter and empowers local farmers to protect their environment.</p>
+<header class="site-header">
+  <div class="brand">
+    <img class="brand-logo" src="assets/favicon.png" alt="logo">
+    <div class="brand-text">
+      <span class="brand-name">Nature For Humanity</span>
+      <span class="brand-tag">Initiative Ltd</span>
+    </div>
   </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html" class="active">Programs</a>
+    <a href="getinvolved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <!-- === Clean Energy === -->
-  <div class="program">
-    <img src="assets/placeholder-energy.jpg" alt="Clean Energy">
-    <h2>☀️ Clean Energy & Climate Adaptation</h2>
-    <p>Access to renewable energy is a human right. We distribute solar lamps, train youth in green technologies, and reduce carbon footprints by transitioning rural communities away from fossil fuels.</p>
-  </div>
-
-  <!-- === Biodiversity & Bee Protection === -->
-  <div class="program">
-    <img src="assets/placeholder-bees.jpg" alt="Bee Protection">
-    <h2>🐝 Biodiversity & Bee Conservation</h2>
-    <p>Bees are vital for pollination and ecosystem balance. We protect wild bee habitats, educate farmers, and promote sustainable honey production to fight biodiversity loss.</p>
-  </div>
-
-  <!-- === Sports for Development === -->
-  <div class="program">
-    <img src="assets/placeholder-sports.jpg" alt="Sports for Development">
-    <h2>⚽ Sports for Community Empowerment</h2>
-    <p>We use football and sports programs to unite youth, promote peace, and deliver climate education. Each game becomes an opportunity for awareness and community building.</p>
-  </div>
-
-  <!-- === Women & Sustainability Leadership === -->
-  <div class="program">
-    <img src="assets/placeholder-women.jpg" alt="Women Leadership">
-    <h2>🌸 Women in Sustainability Leadership</h2>
-    <p>We champion women's leadership in clean energy, environmental governance, and entrepreneurship. Empowering women transforms families and communities.</p>
-  </div>
-
-  <!-- === Child Education === -->
-  <div class="program">
-    <img src="assets/placeholder-education.jpg" alt="Child Education">
-    <h2>🧒 Child Education & Digital Literacy</h2>
-    <p>We equip children with coding, digital, and environmental skills for the future. Our volunteers mentor young learners in rural schools to inspire the next generation of innovators.</p>
+<section class="hero section" style="--bg:url('assets/rainbow-in-needle-tailoring.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content reveal">
+    <h1>Our Programs</h1>
+    <p>We connect people, purpose, and planet through practical, measurable climate action and community empowerment initiatives.</p>
   </div>
 </section>
 
-<!-- ====== CALL TO ACTION ====== -->
-<section class="cta">
-  <h2>Ready to Make a Difference?</h2>
-  <p>Volunteer, partner, or donate to help us expand these programs across Africa.</p>
-  <a href="getinvolved.html" class="btn">Get Involved</a>
+<!-- ENERGY -->
+<section id="energy" class="section">
+  <div class="container two-col">
+    <div class="col reveal">
+      <h2>Clean Energy Access</h2>
+      <p>We deploy affordable solar energy systems to schools, health centers, and households, reducing carbon emissions while improving education, safety, and livelihoods.</p>
+      <ul class="ticks">
+        <li>Community solar hubs</li>
+        <li>Solar for schools,maternity centers & markets</li>
+        <li>Installing Charging Stations and introducing EV buses ,Bikes to uplift local economy</li>
+        <li>Rural electrification for resilience</li>
+      </ul>
+    </div>
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/ev-bus.jpg');"></div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2025 Nature For Humanity Initiative Ltd</p>
+<!-- REFORESTATION -->
+<section id="reforestation" class="section alt">
+  <div class="container two-col">
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/carbon-offset-amuru.jpg');"></div>
+    </div>
+    <div class="col reveal">
+      <h2>Reforestation & Carbon Offsetting</h2>
+      <p>Our reforestation program restores degraded ecosystems and strengthens community-based carbon markets. Indigenous trees and agroforestry create long-term income for local farmers while absorbing CO₂.</p>
+      <ul class="ticks">
+        <li>Community tree nurseries</li>
+        <li>Carbon credit training and Enviromental awareness</li>
+        <li>Soil and water conservation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BIODIVERSITY -->
+<section id="biodiversity" class="section">
+  <div class="container two-col">
+    <div class="col reveal">
+      <h2>Biodiversity & Pollinator Protection</h2>
+      <p>Bees and pollinators are critical to food systems and biodiversity. We support wild habitats and create pollinator-friendly landscapes.</p>
+      <ul class="ticks">
+        <li>Bee habitat restoration</li>
+        <li>Community apiary development</li>
+        <li>Climate-smart beekeeping</li>
+        <li>Pesticide usuage education to local farmers</li>
+      </ul>
+    </div>
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/red-butterfly-in-red-flowers.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WOMEN -->
+<section id="women" class="section alt">
+  <div class="container two-col">
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/placeholder-team1.jpg');"></div>
+    </div>
+    <div class="col reveal">
+      <h2>Women in Sustainability</h2>
+      <p>Women are the backbone of climate resilience. Our programs train women and marginalized youths in renewable energy, water management, and green entrepreneurship.</p>
+      <ul class="ticks">
+        <li>Training in solar and agriculture</li>
+        <li>Micro-enterprise development</li>
+        <li>Leadership and inclusion networks</li>
+        <li>Tailoring and football coach courses offered to the youth</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section id="sports" class="section">
+  <div class="container two-col">
+    <div class="col reveal">
+      <h2>Sports for Climate & Peace</h2>
+      <p>Football is a platform for climate education, teamwork, and peacebuilding. Through youth tournaments and environmental campaigns, sports become a unifying force for change.</p>
+      <ul class="ticks">
+        <li>Football for environmental awareness</li>
+        <li>Youth leadership through sports</li>
+        <li>Health and peace education</li>
+        <li>Sports for all gender</li>
+      </ul>
+    </div>
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/goal-post-in-the-forest.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <div class="container two-col">
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/african-sitting-under-a-tree.jpg');"></div>
+    </div>
+    <div class="col reveal">
+      <h2>Environmental Education & Digital Literacy</h2>
+      <p>We empower children and marginalized youth with digital and environmental education. From coding clubs to tree-planting drives, we equip the next generation to protect and innovate for a sustainable future.</p>
+      <ul class="ticks">
+        <li>Green schools initiative</li>
+        <li>Digital climate learning</li>
+        <li>Youth mentorship</li>
+        <li>Forest computer labs for Computer Education</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WATER & WASH (uses remaining strong image) -->
+<section id="water" class="section">
+  <div class="container two-col">
+    <div class="col reveal">
+      <h2>Water Access & WASH</h2>
+      <p>Safe water access is fundamental to dignity, health, and climate resilience. We support borehole rehabilitation, community water points, and WASH training for households and schools.</p>
+      <ul class="ticks">
+        <li>Community water infrastructure</li>
+        <li>Hygiene training and gender-sensitive WASH</li>
+        <li>Climate risk management for water systems</li>
+      </ul>
+    </div>
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/placeholder-about-hero.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <img class="brand-logo" src="assets/favicon.png" alt="logo">
+      <div>
+        <div class="brand-name">Nature For Humanity</div>
+        <div class="brand-tag">Initiative Ltd</div>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="getinvolved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-meta">
+      <div>© 2025 Nature For Humanity Initiative Ltd</div>
+    </div>
+  </div>
 </footer>
 
 </body>

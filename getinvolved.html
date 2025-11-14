@@ -1,222 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Involved | Nature For Humanity Initiative Ltd.</title>
-  <!-- ===== GOOGLE ANALYTICS (Nature For Humanity Initiative Ltd) ===== -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYDFXCN318"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RYDFXCN318');
-</script>
-<!-- ===== END GOOGLE ANALYTICS ===== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Get Involved | Nature For Humanity Initiative Ltd</title>
 
-  <!-- ===== SEO + CANONICAL BLOCK (GET INVOLVED) ===== -->
-<meta name="description" content="Volunteer, partner, or donate to support climate resilience, reforestation, and community development with Nature for Humanity Initiative Ltd.">
-<meta name="keywords" content="volunteer climate Uganda, donate for trees, sustainability partnership, youth volunteering Africa, NGO Uganda">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Get Involved | Nature For Humanity Initiative Ltd">
-<meta property="og:description" content="Join hands with Nature for Humanity Initiative to create a greener, inclusive, and sustainable world.">
-<meta property="og:image" content="https://www.natureforhumanity.org/assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.natureforhumanity.org/getinvolved.html">
-
-<link rel="canonical" href="https://www.natureforhumanity.org/getinvolved.html">
-<!-- ===== END SEO BLOCK ===== -->
-
-<link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      background: #f4f9f4;
-      color: #333;
-    }
-
-    header {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header img {
-      height: 50px;
-      border-radius: 50%;
-    }
-
-    header nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2 {
-      color: #2e7d32;
-    }
-
-    .form-section {
-      padding: 60px 20px;
-      max-width: 700px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, select, textarea {
-      padding: 12px;
-      border: 1px solid #c8e6c9;
-      border-radius: 8px;
-      font-size: 1rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    button {
-      background: #2e7d32;
-      color: #fff;
-      border: none;
-      padding: 14px;
-      font-size: 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #1b5e20;
-    }
-
-    .scroll-fade {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1.2s ease, transform 1.2s ease;
-    }
-    .scroll-fade.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    footer {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    .intro-text {
-      text-align: center;
-      max-width: 800px;
-      margin: 30px auto 40px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-  </style>
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header>
-    <img src="assets/favicon.png" alt="Logo">
+
+<header class="site-header">
+  <div class="brand">
+    <img class="brand-logo" src="assets/favicon.png" alt="logo">
+    <div class="brand-text">
+      <span class="brand-name">Nature For Humanity</span>
+      <span class="brand-tag">Initiative Ltd</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="getinvolved.html" class="active">Get Involved</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero section" style="--bg:url('assets/aerial-view-football-forest.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content reveal">
     <h1>Get Involved</h1>
-    <nav>
-      <a href="index.html">Home</a>
+    <p>Join hands with us — as a volunteer, partner, or donor — and help build a world where humanity and nature thrive together.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center reveal" style="max-width:800px;">
+    <h2>Be Part of the Change</h2>
+    <p class="lead">Whether you bring skills, resources, or ideas, every contribution fuels our impact in the fight against climate change and poverty.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container grid cards">
+    <div class="card reveal">
+      <div class="card-img" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/for-volunteer-solar-installation.jpg');"></div>
+      <div class="card-body">
+        <h3>Volunteer</h3>
+        <p>Join short-term projects in tree planting, education, clean energy, or wildlife conservation. Gain experience and make an impact on the ground.</p>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/africa-plain-mountain-background.jpg');"></div>
+      <div class="card-body">
+        <h3>Partner</h3>
+        <p>Collaborate with us on research, funding, or field programs. Together, we can scale grassroots sustainability and innovation.</p>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/woman-lookingat-cucumber.jpg');"></div>
+      <div class="card-body">
+        <h3>Donate</h3>
+        <p>Your gift empowers climate resilience projects, supports women and youth, and restores ecosystems across Africa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f8fdf8;">
+  <div class="container reveal">
+    <h2 class="center">Join or Support Us</h2>
+    <p class="center lead">Fill in your details and select your area of interest. Our team will reach out to you shortly.</p>
+
+    <form action="https://formspree.io/f/movprybq" method="POST" class="form-card">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="_replyto" id="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="interest">How do you want to get involved?</label>
+        <select name="interest" id="interest" required>
+          <option value="">Select...</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="partner">Partner</option>
+          <option value="donor">Donor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Tell us more</label>
+        <textarea name="message" id="message" rows="5" placeholder="Briefly describe your interest or experience..."></textarea>
+      </div>
+
+      <button type="submit" class="btn primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+<section class="cta section" style="--bg:url('assets/football-in-eco-city.jpg');">
+  <div class="overlay"></div>
+  <div class="container center reveal">
+    <h2>Together, We Can Rebuild the Planet</h2>
+    <p class="lead">Every action counts — from a planted tree to a powered classroom. Let’s make sustainability our shared story.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <img class="brand-logo" src="assets/favicon.png" alt="logo">
+      <div>
+        <div class="brand-name">Nature For Humanity</div>
+        <div class="brand-tag">Initiative Ltd</div>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
       <a href="programs.html">Programs</a>
       <a href="getinvolved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
+    <div class="foot-meta">
+      <div>© 2025 Nature For Humanity Initiative Ltd</div>
+    </div>
+  </div>
+</footer>
 
-  <!-- INTRO SECTION -->
-  <section class="scroll-fade intro-text">
-    <p>
-      Every action counts. Whether you want to volunteer, become a partner, or donate,
-      your contribution helps us empower communities, restore ecosystems,
-      and create lasting impact across Africa.
-    </p>
-  </section>
-
-  <!-- FORM SECTION -->
-  <section class="form-section scroll-fade">
-    <h2 style="text-align:center;">Join Our Mission</h2>
-    <form action="https://formspree.io/f/movprybq" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
-
-      <label for="type">I’m Interested In</label>
-      <select id="type" name="type" required>
-        <option value="">Select an option</option>
-        <option value="volunteering">Volunteering</option>
-        <option value="partnership">Partnership</option>
-        <option value="donation">Donation / Sponsorship</option>
-        <option value="other">Other</option>
-      </select>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Tell us about yourself or your interest..." required></textarea>
-
-      <button type="submit">Submit Interest</button>
-    </form>
-  </section>
-
-  <!-- CALL TO ACTION -->
-  <section class="scroll-fade" style="text-align:center;margin:60px 0;">
-    <h2>Become Part of the Change</h2>
-    <p style="max-width:700px;margin:0 auto 24px;">
-      We welcome individuals and organizations from all over the world
-      to join our journey toward a sustainable future.
-    </p>
-    <a href="programs.html" class="btn primary">🌿 Explore Our Programs</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
-  </footer>
-
-  <!-- SCROLL ANIMATION SCRIPT -->
-  <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    scrollElements.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>

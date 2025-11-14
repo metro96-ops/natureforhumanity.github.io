@@ -1,248 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Nature For Humanity Initiative Ltd.</title>
-  <!-- ===== GOOGLE ANALYTICS (Nature For Humanity Initiative Ltd) ===== -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYDFXCN318"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RYDFXCN318');
-</script>
-<!-- ===== END GOOGLE ANALYTICS ===== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Us | Nature For Humanity Initiative Ltd</title>
 
-  <!-- ===== SEO + CANONICAL BLOCK (ABOUT) ===== -->
-<meta name="description" content="Learn about Nature for Humanity Initiative Ltd — a community-based organization empowering sustainable development, biodiversity conservation, and inclusive climate action across Africa.">
-<meta name="keywords" content="about nature for humanity, biodiversity Uganda, sustainability Africa, community empowerment, climate action Uganda">
-<meta name="author" content="Nature for Humanity Initiative Ltd">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="About Us | Nature For Humanity Initiative Ltd">
-<meta property="og:description" content="Our story, mission, and commitment to sustainable and inclusive climate development.">
-<meta property="og:image" content="https://www.natureforhumanity.org/assets/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.natureforhumanity.org/about.html">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About Nature For Humanity Initiative Ltd">
-<meta name="twitter:description" content="Discover how Nature for Humanity Initiative builds sustainable communities and restores ecosystems in Africa.">
-<meta name="twitter:image" content="https://www.natureforhumanity.org/assets/favicon.png">
-
-<link rel="canonical" href="https://www.natureforhumanity.org/about.html">
-<!-- ===== END SEO BLOCK ===== -->
-
-<link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      background: #f4f9f4;
-      color: #333;
-    }
-
-    header {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header img {
-      height: 50px;
-      border-radius: 50%;
-    }
-
-    header nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2 {
-      color: #2e7d32;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      line-height: 1.7;
-    }
-
-    .intro {
-      text-align: center;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 40px 20px;
-    }
-
-    .values, .themes {
-      background: #e8f5e9;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 40px 20px;
-      margin-top: 40px;
-    }
-
-    .themes h3 {
-      color: #1b5e20;
-    }
-
-    .themes ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
-    }
-
-    .themes li {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      max-width: 250px;
-      flex: 1 1 200px;
-    }
-
-    .founder {
-      background: #fff;
-      border-left: 6px solid #2e7d32;
-      padding: 20px;
-      margin-top: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    .scroll-fade {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1.2s ease, transform 1.2s ease;
-    }
-
-    .scroll-fade.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header>
-    <img src="assets/favicon.png" alt="Logo">
+
+<header class="site-header">
+  <div class="brand">
+    <img class="brand-logo" src="assets/favicon.png" alt="logo">
+    <div class="brand-text">
+      <span class="brand-name">Nature For Humanity</span>
+      <span class="brand-tag">Initiative Ltd</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="getinvolved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero section" style="--bg:url('assets/placeholder-vision.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content reveal">
     <h1>About Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
+    <p>We are a community-rooted organization fostering sustainability, inclusion, and climate resilience through local action and global partnerships.</p>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section">
+  <div class="container two-col">
+    <div class="col reveal">
+      <h2>Our Story</h2>
+      <p>Nature For Humanity Initiative Ltd was founded on the belief that humanity’s progress and nature’s survival are inseparable. Our work spans clean energy, biodiversity conservation, water access, and inclusive development programs that empower local communities—especially women and youth—to lead sustainable change.</p>
+      <p>We started as a small community initiative and have grown into a network of changemakers united by a single vision: to make sustainability a lived experience, not just a conversation.</p>
+    </div>
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/Africanboystandingbythetree.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION + MISSION -->
+<section class="section alt">
+  <div class="container two-col">
+    <div class="col reveal">
+      <div class="photo-card" style="--photo:linear-gradient(135deg, rgba(0,119,182,.20), rgba(46,139,87,.20)), url('assets/pineppale_wheelborrow_africanwoman.jpg');"></div>
+    </div>
+    <div class="col reveal">
+      <h2>Our Vision</h2>
+      <p>A world where humanity and nature coexist in balance, innovation, and shared prosperity.</p>
+      <h2>Our Mission</h2>
+      <p>To advance climate action and community well-being through clean energy, nature conservation, and inclusive leadership—driven by grassroots participation and global collaboration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM: text only per your instruction -->
+<section class="section">
+  <div class="container">
+    <h2 class="center reveal">Our Team</h2>
+    <p class="center lead reveal">Our strength lies in our people—local volunteers, researchers, youth leaders, and innovators committed to environmental justice and human progress.</p>
+    <div class="reveal" style="max-width:800px;margin:30px auto;text-align:center;">
+      <p>We are building a collective of passionate individuals from diverse backgrounds—environmental scientists, community organizers, educators, and entrepreneurs—all united in purpose. Each team member brings unique expertise that drives the heart of our projects across Africa and beyond.</p>
+      <p>From project planning to on-ground implementation, our team works hand in hand with communities to co-create solutions that respect culture, promote inclusion, and sustain the environment for future generations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDSCAPE & PEOPLE GALLERY: use remaining human/nature assets -->
+<section class="section">
+  <div class="container">
+    <h2 class="center reveal">Our Landscape & People</h2>
+    <div class="gallery cols-4 reveal">
+      <img src="assets/africa-plain-mountain-background.jpg" alt="Mountains">
+      <img src="assets/footballfieldintheforest.jpg" alt="Field in forest">
+      <img src="assets/goal-post-in-the-forest.jpg" alt="Goal post in forest">
+      <img src="assets/aerial-view-football-forest.jpg" alt="Aerial football & forest">
+      <img src="assets/woman-lookingat-cucumber.jpg" alt="Women & agriculture">
+      <img src="assets/pineppale_wheelborrow_africanwoman.jpg" alt="Agriculture livelihoods">
+      <img src="assets/placeholder-women.jpg" alt="Women & food systems">
+      <img src="assets/placeholder-team3.jpg" alt="Community smiles">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <img class="brand-logo" src="assets/favicon.png" alt="logo">
+      <div>
+        <div class="brand-name">Nature For Humanity</div>
+        <div class="brand-tag">Initiative Ltd</div>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
       <a href="programs.html">Programs</a>
       <a href="getinvolved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
+    <div class="foot-meta">
+      <div>© 2025 Nature For Humanity Initiative Ltd</div>
+    </div>
+  </div>
+</footer>
 
-  <!-- INTRO -->
-  <section class="intro scroll-fade">
-    <h2>Our Story</h2>
-    <p>
-      Founded with a vision to bridge the gap between humanity and nature,
-      <strong>Nature For Humanity Initiative Ltd.</strong> is a community-based organization
-      committed to advancing sustainable development across Africa. We believe that empowering
-      local communities is the key to climate resilience, social inclusion, and biodiversity protection.
-    </p>
-    <p>
-      Our work spans clean energy, water, biodiversity, sports, and education — ensuring that
-      no one is left behind in the global climate transformation.
-    </p>
-  </section>
-
-  <!-- VALUES -->
-  <section class="values scroll-fade">
-    <h2>Our Mission & Values</h2>
-    <p>
-      We exist to empower communities to protect ecosystems, promote climate awareness, and
-      create sustainable livelihoods. Our core values are sustainability, inclusivity, and integrity.
-    </p>
-  </section>
-
-  <!-- THEMES -->
-  <section class="themes scroll-fade">
-    <h2>Our Thematic Areas</h2>
-    <ul>
-      <li>
-        <h3>🌱 Biodiversity & Reforestation</h3>
-        <p>Restoring degraded ecosystems through native tree planting and wildlife protection.</p>
-      </li>
-      <li>
-        <h3>⚡ Clean Energy & Water Access</h3>
-        <p>Delivering solar power and clean water to rural communities to reduce poverty and emissions.</p>
-      </li>
-      <li>
-        <h3>🐝 Pollinator & Bird Conservation</h3>
-        <p>Safeguarding pollinators and promoting habitats that sustain biodiversity and agriculture.</p>
-      </li>
-      <li>
-        <h3>🏃 Sports for Development</h3>
-        <p>Using football and local sports as tools for education, leadership, and environmental unity.</p>
-      </li>
-      <li>
-        <h3>🌍 Inclusion & Community Empowerment</h3>
-        <p>Building equitable opportunities for women, youth, and vulnerable groups to participate in change.</p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- FOUNDER MESSAGE -->
-  <section class="founder scroll-fade">
-    <h2>Message from the Founder</h2>
-    <p>
-      “Nature for Humanity Initiative was born out of a simple yet powerful belief — that humanity’s
-      greatest strength lies in its ability to care, adapt, and restore. Every tree we plant,
-      every child we teach, and every village we empower brings us closer to a fairer, greener world.”
-    </p>
-    <p><strong>— Magoola Scanlen Derrick, Founder & Volunteer</strong></p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Nature For Humanity Initiative Ltd. | All Rights Reserved.</p>
-  </footer>
-
-  <!-- SCROLL ANIMATION SCRIPT -->
-  <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    scrollElements.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
-
